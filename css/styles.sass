@@ -1,0 +1,25 @@
+@import variables
+@import mixins
+
+div[role=region]
+  +dark
+
+  table[role=presentation]
+    +dark
+
+    form
+      *
+        +dark
+
+    table[cellpadding='0'] tbody tr:first-child td:nth-of-type(2) div:last-child,
+    div[style='height: 40px;']
+      +dark
+
+    colgroup + tbody
+      +dark
+
+      img
+        filter: invert(1)
+
+div[aria-label='Message Body']
+  +dark
